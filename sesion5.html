@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fromulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Formulario de evento</h1>
+    </header>
+    <form action="#">
+     <fieldset>
+      <label for="Name">Nombre</label>
+      <input type="text" id="Name" required> <br><br>
+      <label for="Email">Correo Electronico</label>
+      <input type="email" id="Email" required><br><br>
+      <label for="Password">Contraseña</label>
+      <input type="password" id="Password" required><br><br>
+      <label for="date">Fecha de nacimiento</label>
+      <input type="date" id="date" required><br><br>
+      <label for="Sexo Masculino" class="inline-label">Masculino</label>
+      <input type="radio" id="Sexo" name="Genero" value="Genero Masculino" required>
+      <label for="Sexo Femenino" class="inline-label">Femenino</label>
+      <input type="radio" id="Sexo" name="Genero" value="Genero Femenino"    required>
+      <label for="otros" class="inline-label">Otros</label>
+      <input type="radio" id="Sexo" name="Genero" value="=Otro"   required><br><br>
+
+     </fieldset>
+     <fieldset>
+        <legend>Datos del evento</legend>
+        <label for="Evento">Nombre del evento</label>
+        <input type="text" id="Evento" name="Evento" required>
+        <label for="textarea">Comentarios</label>
+        <textarea name="Comentarios" id="textarea" rows="4" cols="50" placeholder="Escribe aqui tus comentarios">
+        </textarea>
+        <br><br>
+        <label for="hour">Hora del evento</label><br>
+        <input type="time" id="hour" name="hour" required> <br><br>
+        <label for="Lugar">Lugar del evento</label><br>
+        <select name="Lugar" id="Lugar" required>
+            <option value="">Seleccione Lugar</option>
+            <option value="Auditorio">Auditorio Principal</option>
+            <option value="Conferencia">Salon de conferencia</option>
+            <option value="av">Aula virtual</option>
+            <option value="Jardin">jardin</option>      
+        </select>
+        <br><br>
+        <label for="">Servicios adicionales</label>
+        <input type="checkbox" id="RSA1" name="Servicios" value="si">
+        <label for="RSA1" class="inline-label">Si</label>
+        <input type="checkbox" id="RSA2" name="Servicios" value="no">
+        <label for="RSA2" class="inline-label">No</label>
+
+     </fieldset>
+     <button type="submit">Enviar inscripcion</button>
+    </form>
+</body>
+</html>
